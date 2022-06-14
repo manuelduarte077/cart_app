@@ -19,7 +19,10 @@ class Details extends StatelessWidget {
         title: const Text(
           'Details',
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+          ),
         ),
       ),
       body: Center(

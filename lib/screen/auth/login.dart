@@ -92,7 +92,7 @@ class _LoginState extends State<Login> {
                         },
                         child: const Text(
                           'Create Account',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.black),
                         ),
                       ),
                     ),
@@ -103,11 +103,11 @@ class _LoginState extends State<Login> {
                       child: ElevatedButton(
                         style: ButtonStyle(
                           foregroundColor:
-                              MaterialStateProperty.all<Color>(Colors.white),
+                              MaterialStateProperty.all<Color>(Colors.black),
                           shape: MaterialStateProperty.all<OutlinedBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
-                              side: const BorderSide(color: Colors.white),
+                              side: const BorderSide(color: Colors.indigo),
                             ),
                           ),
                         ),

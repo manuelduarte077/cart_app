@@ -40,8 +40,9 @@ class _PaymentState extends State<Payment> {
                   Expanded(
                     child: TextField(
                         decoration: const InputDecoration(
-                            border: UnderlineInputBorder(),
-                            hintText: 'Credit Card'),
+                          border: UnderlineInputBorder(),
+                          hintText: 'Credit Card',
+                        ),
                         controller: creditCardController),
                   ),
                 ],
@@ -56,12 +57,14 @@ class _PaymentState extends State<Payment> {
                 children: [
                   Expanded(
                     child: TextField(
-                        maxLength: 5,
-                        keyboardType: TextInputType.number,
-                        decoration: const InputDecoration(
-                            border: UnderlineInputBorder(),
-                            hintText: 'Expiration Date'),
-                        controller: expirationController),
+                      maxLength: 5,
+                      keyboardType: TextInputType.number,
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'Expiration Date',
+                      ),
+                      controller: expirationController,
+                    ),
                   ),
                 ],
               ),
@@ -75,10 +78,11 @@ class _PaymentState extends State<Payment> {
                 children: [
                   Expanded(
                     child: TextField(
-                        keyboardType: TextInputType.number,
-                        decoration: const InputDecoration(
-                            border: UnderlineInputBorder(), hintText: 'CVC'),
-                        controller: cvcController),
+                      keyboardType: TextInputType.number,
+                      decoration: const InputDecoration(
+                          border: UnderlineInputBorder(), hintText: 'CVC'),
+                      controller: cvcController,
+                    ),
                   ),
                 ],
               ),

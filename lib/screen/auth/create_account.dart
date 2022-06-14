@@ -26,7 +26,10 @@ class _CreateAccountState extends State<CreateAccount> {
         title: const Text(
           'Create Account',
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
         ),
       ),
       body: SafeArea(
@@ -42,10 +45,11 @@ class _CreateAccountState extends State<CreateAccount> {
                     children: [
                       Expanded(
                         child: TextFormField(
-                            decoration: const InputDecoration(
-                                border: UnderlineInputBorder(),
-                                hintText: 'Email'),
-                            controller: emailTextController),
+                          decoration: const InputDecoration(
+                              border: UnderlineInputBorder(),
+                              hintText: 'Email'),
+                          controller: emailTextController,
+                        ),
                       ),
                     ],
                   ),
@@ -56,13 +60,14 @@ class _CreateAccountState extends State<CreateAccount> {
                     children: [
                       Expanded(
                         child: TextFormField(
-                            enableSuggestions: false,
-                            autocorrect: false,
-                            obscureText: true,
-                            decoration: const InputDecoration(
-                                border: UnderlineInputBorder(),
-                                hintText: 'Password'),
-                            controller: passwordTextController),
+                          enableSuggestions: false,
+                          autocorrect: false,
+                          obscureText: true,
+                          decoration: const InputDecoration(
+                              border: UnderlineInputBorder(),
+                              hintText: 'Password'),
+                          controller: passwordTextController,
+                        ),
                       ),
                     ],
                   ),
@@ -83,7 +88,8 @@ class _CreateAccountState extends State<CreateAccount> {
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
                               side: BorderSide(
-                                  color: Theme.of(context).primaryColor),
+                                color: Theme.of(context).primaryColor,
+                              ),
                             ),
                           ),
                         ),
@@ -92,7 +98,7 @@ class _CreateAccountState extends State<CreateAccount> {
                         },
                         child: const Text(
                           'Create Account',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.black),
                         ),
                       ),
                     ),
@@ -103,11 +109,11 @@ class _CreateAccountState extends State<CreateAccount> {
                       child: ElevatedButton(
                         style: ButtonStyle(
                           foregroundColor:
-                              MaterialStateProperty.all<Color>(Colors.white),
+                              MaterialStateProperty.all<Color>(Colors.black),
                           shape: MaterialStateProperty.all<OutlinedBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
-                              side: const BorderSide(color: Colors.white),
+                              side: const BorderSide(color: Colors.indigo),
                             ),
                           ),
                         ),
