@@ -22,7 +22,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
         title: const Text(
           'Personal Info',
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
         ),
       ),
       body: SingleChildScrollView(
@@ -108,7 +108,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               onPressed: () => Navigator.pop(context),
               child: const Text(
                 'Update',
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
               ),
             ),
           ],

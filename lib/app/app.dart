@@ -35,9 +35,9 @@ class MyApp extends StatelessWidget {
             routeInformationParser: router.routeInformationParser,
             routerDelegate: router.routerDelegate,
             debugShowCheckedModeBanner: false,
-            title: 'Navigation App',
             theme: ThemeData(
-              primarySwatch: Colors.blue,
+              useMaterial3: true,
+              primarySwatch: Colors.indigo,
             ),
           );
         },
