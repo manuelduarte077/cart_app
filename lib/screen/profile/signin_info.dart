@@ -85,7 +85,7 @@ class _SigninInfoState extends State<SigninInfo> {
               onPressed: () => Navigator.pop(context),
               child: const Text(
                 'Change Password',
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
               ),
             ),
             const SizedBox(
@@ -107,7 +107,7 @@ class _SigninInfoState extends State<SigninInfo> {
               },
               child: const Text(
                 'Sign Out',
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
               ),
             ),
           ],
