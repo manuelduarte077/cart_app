@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:splash_screen_view/SplashScreenView.dart';
 
 import '../cart_holder.dart';
 import '../login_state.dart';
 import '../router/routes.dart';
+import '../screen/auth/login.dart';
 
 class MyApp extends StatelessWidget {
   final LoginState loginState;
-
   const MyApp({Key? key, required this.loginState}) : super(key: key);
 
   // This widget is the root of your application.
@@ -37,7 +38,6 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               useMaterial3: true,
-              primarySwatch: Colors.indigo,
             ),
           );
         },

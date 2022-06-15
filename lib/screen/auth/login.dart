@@ -20,15 +20,6 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.lightBlue,
-        title: const Text(
-          'Login',
-          style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
-        ),
-      ),
       body: SafeArea(
         child: Center(
           child: Form(
@@ -42,10 +33,11 @@ class _LoginState extends State<Login> {
                     children: [
                       Expanded(
                         child: TextFormField(
-                            decoration: const InputDecoration(
-                                border: UnderlineInputBorder(),
-                                hintText: 'Email'),
-                            controller: emailTextController),
+                          decoration: const InputDecoration(
+                              border: UnderlineInputBorder(),
+                              hintText: 'Email'),
+                          controller: emailTextController,
+                        ),
                       ),
                     ],
                   ),
@@ -56,13 +48,15 @@ class _LoginState extends State<Login> {
                     children: [
                       Expanded(
                         child: TextFormField(
-                            enableSuggestions: false,
-                            autocorrect: false,
-                            obscureText: true,
-                            decoration: const InputDecoration(
-                                border: UnderlineInputBorder(),
-                                hintText: 'Password'),
-                            controller: passwordTextController),
+                          enableSuggestions: false,
+                          autocorrect: false,
+                          obscureText: true,
+                          decoration: const InputDecoration(
+                            border: UnderlineInputBorder(),
+                            hintText: 'Password',
+                          ),
+                          controller: passwordTextController,
+                        ),
                       ),
                     ],
                   ),
@@ -83,7 +77,8 @@ class _LoginState extends State<Login> {
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
                               side: BorderSide(
-                                  color: Theme.of(context).primaryColor),
+                                color: Theme.of(context).primaryColor,
+                              ),
                             ),
                           ),
                         ),

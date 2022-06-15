@@ -9,5 +9,7 @@ Future<void> main() async {
 
   final state = LoginState(await SharedPreferences.getInstance());
   state.checkLoggedIn();
-  runApp(MyApp(loginState: state));
+  runApp(
+    MyApp(loginState: state),
+  );
 }
