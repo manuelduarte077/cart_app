@@ -22,7 +22,10 @@ class _PersonalInfoState extends State<PersonalInfo> {
         title: const Text(
           'Personal Info',
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+          ),
         ),
       ),
       body: SingleChildScrollView(
@@ -35,9 +38,12 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 children: [
                   Expanded(
                     child: TextField(
-                        decoration: const InputDecoration(
-                            border: UnderlineInputBorder(), hintText: 'Name'),
-                        controller: nameTextController),
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'Name',
+                      ),
+                      controller: nameTextController,
+                    ),
                   ),
                 ],
               ),
@@ -69,7 +75,9 @@ class _PersonalInfoState extends State<PersonalInfo> {
                   Expanded(
                     child: TextField(
                         decoration: const InputDecoration(
-                            border: UnderlineInputBorder(), hintText: 'City'),
+                          border: UnderlineInputBorder(),
+                          hintText: 'City',
+                        ),
                         controller: cityTextController),
                   ),
                 ],
@@ -85,7 +93,9 @@ class _PersonalInfoState extends State<PersonalInfo> {
                   Expanded(
                     child: TextField(
                         decoration: const InputDecoration(
-                            border: UnderlineInputBorder(), hintText: 'State'),
+                          border: UnderlineInputBorder(),
+                          hintText: 'State',
+                        ),
                         controller: stateTextController),
                   ),
                 ],

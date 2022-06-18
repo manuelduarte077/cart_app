@@ -25,7 +25,10 @@ class _PaymentState extends State<Payment> {
         title: const Text(
           'Payment',
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+          ),
         ),
       ),
       body: SingleChildScrollView(
