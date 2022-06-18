@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'profile/profile.dart';
+
 import 'cart/cart.dart';
+import 'profile/profile.dart';
 import 'shopping/shopping.dart';
+import '../style/theme.dart';
 
 class HomeScreen extends StatefulWidget {
   final int index;
@@ -45,25 +47,23 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.lightBlue,
-        title: const Text(
-          'Navigator',
-          style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
-        ),
-      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'Shop'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart), label: 'Cart'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+            icon: Icon(Icons.shop),
+            label: 'Shop',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart),
+            label: 'Cart',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
         ],
-        backgroundColor: Colors.blue,
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.white,
+        selectedItemColor: ColorsApp.mainColor,
         onTap: (index) {
           setState(
             () {
