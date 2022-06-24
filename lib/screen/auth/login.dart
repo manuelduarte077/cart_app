@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../constants.dart';
 import '../../login_state.dart';
+import '../../style/theme.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -20,17 +21,21 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Form(
-          key: _formKey,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextFieldEmail(emailTextController: emailTextController),
-              TextFieldPassword(passwordTextController: passwordTextController),
-              const ButtonAuth()
-            ],
-          ),
+      body: Form(
+        key: _formKey,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const CircleAvatar(
+              backgroundImage: NetworkImage(
+                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+              ),
+              radius: 100,
+            ),
+            TextFieldEmail(emailTextController: emailTextController),
+            TextFieldPassword(passwordTextController: passwordTextController),
+            const ButtonAuth()
+          ],
         ),
       ),
     );
@@ -48,7 +53,8 @@ class TextFieldEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding:
+          const EdgeInsets.only(top: 50.0, left: 35.0, right: 35.0, bottom: 30),
       child: Row(
         children: [
           Expanded(
@@ -77,7 +83,7 @@ class TextFieldPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.only(left: 35.0, right: 35.0, bottom: 50),
       child: Row(
         children: [
           Expanded(
@@ -108,7 +114,7 @@ class ButtonAuth extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         const SizedBox(
-          width: 16,
+          width: 26,
         ),
         Expanded(
           child: ElevatedButton(
@@ -118,8 +124,8 @@ class ButtonAuth extends StatelessWidget {
               shape: MaterialStateProperty.all<OutlinedBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),
-                  side: BorderSide(
-                    color: Theme.of(context).primaryColor,
+                  side: const BorderSide(
+                    color: ColorsApp.background,
                   ),
                 ),
               ),
@@ -134,7 +140,7 @@ class ButtonAuth extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          width: 16,
+          width: 26,
         ),
         Expanded(
           child: ElevatedButton(
@@ -143,7 +149,7 @@ class ButtonAuth extends StatelessWidget {
               shape: MaterialStateProperty.all<OutlinedBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),
-                  side: const BorderSide(color: Colors.indigo),
+                  side: const BorderSide(color: ColorsApp.background),
                 ),
               ),
             ),
@@ -154,7 +160,7 @@ class ButtonAuth extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          width: 16,
+          width: 26,
         ),
       ],
     );

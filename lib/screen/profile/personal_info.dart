@@ -92,11 +92,12 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 children: [
                   Expanded(
                     child: TextField(
-                        decoration: const InputDecoration(
-                          border: UnderlineInputBorder(),
-                          hintText: 'State',
-                        ),
-                        controller: stateTextController),
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'State',
+                      ),
+                      controller: stateTextController,
+                    ),
                   ),
                 ],
               ),

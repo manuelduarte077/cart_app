@@ -13,12 +13,17 @@ class Shopping extends StatelessWidget {
       body: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(items[index]),
-            onTap: () {
-              final value = items[index];
-              context.goNamed(detailsRouteName, params: {'item': value});
-            },
+          return Card(
+            child: ListTile(
+              title: Text(items[index]),
+              subtitle: Text(items[index]),
+              leading: const CircleAvatar(backgroundImage: NetworkImage('')),
+              trailing: const Icon(Icons.bookmark),
+              onTap: () {
+                final value = items[index];
+                context.goNamed(detailsRouteName, params: {'item': value});
+              },
+            ),
           );
         },
       ),

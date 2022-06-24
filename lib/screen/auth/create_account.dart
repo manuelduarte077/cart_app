@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
+import '../../style/theme.dart';
 import '../../constants.dart';
 import '../../login_state.dart';
 
@@ -87,8 +88,8 @@ class _CreateAccountState extends State<CreateAccount> {
                           shape: MaterialStateProperty.all<OutlinedBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
-                              side: BorderSide(
-                                color: Theme.of(context).primaryColor,
+                              side: const BorderSide(
+                                color: ColorsApp.background,
                               ),
                             ),
                           ),
@@ -113,7 +114,8 @@ class _CreateAccountState extends State<CreateAccount> {
                           shape: MaterialStateProperty.all<OutlinedBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
-                              side: const BorderSide(color: Colors.indigo),
+                              side:
+                                  const BorderSide(color: ColorsApp.background),
                             ),
                           ),
                         ),

@@ -23,7 +23,10 @@ class _SigninInfoState extends State<SigninInfo> {
         title: const Text(
           'Signin Info',
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
         ),
       ),
       body: SafeArea(
@@ -49,10 +52,12 @@ class _SigninInfoState extends State<SigninInfo> {
                 children: [
                   Expanded(
                     child: TextField(
-                        decoration: const InputDecoration(
-                            border: UnderlineInputBorder(),
-                            hintText: 'New Password'),
-                        controller: password1TextController),
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'New Password',
+                      ),
+                      controller: password1TextController,
+                    ),
                   ),
                 ],
               ),
@@ -64,8 +69,9 @@ class _SigninInfoState extends State<SigninInfo> {
                   Expanded(
                     child: TextField(
                         decoration: const InputDecoration(
-                            border: UnderlineInputBorder(),
-                            hintText: 'Type New Password Again'),
+                          border: UnderlineInputBorder(),
+                          hintText: 'Type New Password Again',
+                        ),
                         controller: password2TextController),
                   ),
                 ],

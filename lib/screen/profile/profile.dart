@@ -20,7 +20,10 @@ class _ProfileState extends State<Profile> {
           elevation: 2.0,
           shape: RoundedRectangleBorder(
             side: const BorderSide(
-                color: Colors.black, width: 1.0, style: BorderStyle.solid),
+              color: Colors.black,
+              width: 1.0,
+              style: BorderStyle.solid,
+            ),
             borderRadius: BorderRadius.circular(10.0),
           ),
           color: Colors.white,
