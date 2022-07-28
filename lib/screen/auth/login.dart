@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 
 import '../../constants.dart';
 import '../../login_state.dart';
-import '../../style/theme.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -61,7 +60,15 @@ class TextFieldEmail extends StatelessWidget {
             child: TextFormField(
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(),
+                icon: Icon(
+                  Icons.email,
+                  color: kPrimaryColor,
+                ),
                 hintText: 'Email',
+                contentPadding: EdgeInsets.symmetric(
+                  horizontal: defaultPadding,
+                  vertical: defaultPadding,
+                ),
               ),
               controller: emailTextController,
             ),
@@ -93,7 +100,15 @@ class TextFieldPassword extends StatelessWidget {
               obscureText: true,
               decoration: const InputDecoration(
                 border: UnderlineInputBorder(),
+                icon: Icon(
+                  Icons.lock,
+                  color: kPrimaryColor,
+                ),
                 hintText: 'Password',
+                contentPadding: EdgeInsets.symmetric(
+                  horizontal: defaultPadding,
+                  vertical: defaultPadding,
+                ),
               ),
               controller: passwordTextController,
             ),
@@ -119,13 +134,12 @@ class ButtonAuth extends StatelessWidget {
         Expanded(
           child: ElevatedButton(
             style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(
-                  Theme.of(context).primaryColor),
+              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
               shape: MaterialStateProperty.all<OutlinedBorder>(
                 RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4.0),
+                  borderRadius: BorderRadius.circular(16),
                   side: const BorderSide(
-                    color: ColorsApp.background,
+                    color: kPrimaryLightColor,
                   ),
                 ),
               ),
@@ -135,7 +149,7 @@ class ButtonAuth extends StatelessWidget {
             },
             child: const Text(
               'Create Account',
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(fontSize: 16),
             ),
           ),
         ),
@@ -145,18 +159,21 @@ class ButtonAuth extends StatelessWidget {
         Expanded(
           child: ElevatedButton(
             style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
               shape: MaterialStateProperty.all<OutlinedBorder>(
                 RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4.0),
-                  side: const BorderSide(color: ColorsApp.background),
+                  borderRadius: BorderRadius.circular(16),
+                  side: const BorderSide(color: kPrimaryLightColor),
                 ),
               ),
             ),
             onPressed: () {
               saveLoginState(context);
             },
-            child: const Text('Login'),
+            child: const Text(
+              'Login',
+              style: TextStyle(fontSize: 16),
+            ),
           ),
         ),
         const SizedBox(

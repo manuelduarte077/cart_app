@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 const String rootRouteName = 'root';
 const String cartRouteName = 'cart';
 const String createAccountRouteName = 'create-account';
@@ -16,3 +18,11 @@ const String profileSigninInfoRouteName = 'profile-signin';
 const String subDetailsRouteName = 'shop-details';
 const String shoppingRouteName = 'shopping';
 const String signinInfoRouteName = 'signin';
+
+/// Colors
+
+const kPrimaryColor = Color(0xFF6F35A5);
+const kPrimaryLightColor = Color(0xFFF1E6FF);
+
+/// Padding
+const double defaultPadding = 16.0;

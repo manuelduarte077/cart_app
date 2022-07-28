@@ -47,8 +47,9 @@ class _CreateAccountState extends State<CreateAccount> {
                       Expanded(
                         child: TextFormField(
                           decoration: const InputDecoration(
-                              border: UnderlineInputBorder(),
-                              hintText: 'Email'),
+                            border: UnderlineInputBorder(),
+                            hintText: 'Email',
+                          ),
                           controller: emailTextController,
                         ),
                       ),
@@ -65,8 +66,9 @@ class _CreateAccountState extends State<CreateAccount> {
                           autocorrect: false,
                           obscureText: true,
                           decoration: const InputDecoration(
-                              border: UnderlineInputBorder(),
-                              hintText: 'Password'),
+                            border: UnderlineInputBorder(),
+                            hintText: 'Password',
+                          ),
                           controller: passwordTextController,
                         ),
                       ),
@@ -114,8 +116,9 @@ class _CreateAccountState extends State<CreateAccount> {
                           shape: MaterialStateProperty.all<OutlinedBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
-                              side:
-                                  const BorderSide(color: ColorsApp.background),
+                              side: const BorderSide(
+                                color: ColorsApp.background,
+                              ),
                             ),
                           ),
                         ),

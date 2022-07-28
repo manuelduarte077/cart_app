@@ -59,7 +59,9 @@ class _ProfileState extends State<Profile> {
             child: ListTile(
               title: const Text(
                 'Payment',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               onTap: () {
                 context.goNamed(paymentRouteName);

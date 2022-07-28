@@ -40,8 +40,10 @@ class _SigninInfoState extends State<SigninInfo> {
                 children: const [
                   Text(
                     'Change Password',
-                    style:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18.0,
+                    ),
                   )
                 ],
               ),
@@ -68,11 +70,12 @@ class _SigninInfoState extends State<SigninInfo> {
                 children: [
                   Expanded(
                     child: TextField(
-                        decoration: const InputDecoration(
-                          border: UnderlineInputBorder(),
-                          hintText: 'Type New Password Again',
-                        ),
-                        controller: password2TextController),
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'Type New Password Again',
+                      ),
+                      controller: password2TextController,
+                    ),
                   ),
                 ],
               ),
@@ -84,7 +87,9 @@ class _SigninInfoState extends State<SigninInfo> {
                 shape: MaterialStateProperty.all<OutlinedBorder>(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4.0),
-                    side: BorderSide(color: Theme.of(context).primaryColor),
+                    side: BorderSide(
+                      color: Theme.of(context).primaryColor,
+                    ),
                   ),
                 ),
               ),
@@ -104,7 +109,9 @@ class _SigninInfoState extends State<SigninInfo> {
                 shape: MaterialStateProperty.all<OutlinedBorder>(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4.0),
-                    side: BorderSide(color: Theme.of(context).primaryColor),
+                    side: BorderSide(
+                      color: Theme.of(context).primaryColor,
+                    ),
                   ),
                 ),
               ),

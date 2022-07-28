@@ -14,7 +14,9 @@ class Cart extends StatelessWidget {
         itemCount: cartHolder.cartItems.length,
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text('${cartHolder.cartItems[index]}'),
+            title: Text(
+              '${cartHolder.cartItems[index]}',
+            ),
           );
         },
       ),

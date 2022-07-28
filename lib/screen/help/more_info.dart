@@ -17,7 +17,10 @@ class _MoreInfoState extends State<MoreInfo> {
         title: const Text(
           'More Info',
           style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w500, color: Colors.white),
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
         ),
       ),
       body: SafeArea(
@@ -28,7 +31,10 @@ class _MoreInfoState extends State<MoreInfo> {
               elevation: 2.0,
               shape: RoundedRectangleBorder(
                 side: const BorderSide(
-                    color: Colors.black, width: 1.0, style: BorderStyle.solid),
+                  color: Colors.black,
+                  width: 1.0,
+                  style: BorderStyle.solid,
+                ),
                 borderRadius: BorderRadius.circular(10.0),
               ),
               color: Colors.white,
@@ -39,7 +45,9 @@ class _MoreInfoState extends State<MoreInfo> {
                   child: ListTile(
                     title: Text(
                       'Help Center',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -49,7 +57,10 @@ class _MoreInfoState extends State<MoreInfo> {
               elevation: 2.0,
               shape: RoundedRectangleBorder(
                 side: const BorderSide(
-                    color: Colors.black, width: 1.0, style: BorderStyle.solid),
+                  color: Colors.black,
+                  width: 1.0,
+                  style: BorderStyle.solid,
+                ),
                 borderRadius: BorderRadius.circular(10.0),
               ),
               color: Colors.white,
@@ -60,7 +71,9 @@ class _MoreInfoState extends State<MoreInfo> {
                   child: ListTile(
                     title: Text(
                       'Rate the App',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),

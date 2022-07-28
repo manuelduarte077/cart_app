@@ -57,10 +57,12 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 children: [
                   Expanded(
                     child: TextField(
-                        decoration: const InputDecoration(
-                            border: UnderlineInputBorder(),
-                            hintText: 'Address'),
-                        controller: addressTextController),
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'Address',
+                      ),
+                      controller: addressTextController,
+                    ),
                   ),
                 ],
               ),
@@ -74,11 +76,12 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 children: [
                   Expanded(
                     child: TextField(
-                        decoration: const InputDecoration(
-                          border: UnderlineInputBorder(),
-                          hintText: 'City',
-                        ),
-                        controller: cityTextController),
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'City',
+                      ),
+                      controller: cityTextController,
+                    ),
                   ),
                 ],
               ),
