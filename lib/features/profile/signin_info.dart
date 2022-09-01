@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../login_state.dart';
+import '../../utils/login_state.dart';
 
 class SigninInfo extends StatefulWidget {
   const SigninInfo({Key? key}) : super(key: key);

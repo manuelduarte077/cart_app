@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../cart_holder.dart';
-import '../login_state.dart';
+import '../utils/cart_holder.dart';
+import '../utils/login_state.dart';
 import '../router/routes.dart';
 
 class MyApp extends StatelessWidget {

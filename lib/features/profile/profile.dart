@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../constants.dart';
+import '../../utils/constants.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);

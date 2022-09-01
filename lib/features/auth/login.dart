@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../constants.dart';
-import '../../login_state.dart';
+import '../../utils/constants.dart';
+import '../../utils/login_state.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);

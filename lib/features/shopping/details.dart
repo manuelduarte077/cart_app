@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
-import '../../cart_holder.dart';
-import '../../constants.dart';
+import '../../utils/cart_holder.dart';
+import '../../utils/constants.dart';
 
 class Details extends StatelessWidget {
   final String description;

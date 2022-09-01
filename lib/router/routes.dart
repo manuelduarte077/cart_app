@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../screen/auth/create_account.dart';
+import '../features/auth/create_account.dart';
 import '../custom_widgets/error_page.dart';
-import '../screen/home_screen.dart';
-import '../screen/help/more_info.dart';
-import '../screen/payment.dart';
-import '../constants.dart';
-import '../login_state.dart';
+import '../features/home_screen.dart';
+import '../features/help/more_info.dart';
+import '../features/payment.dart';
+import '../utils/constants.dart';
+import '../utils/login_state.dart';
 
-import '../screen/profile/screen_profiles.dart';
-import '../screen/shopping/details.dart';
+import '../features/profile/screen_profiles.dart';
+import '../features/shopping/details.dart';
 
 class MyRouter {
   final LoginState loginState;

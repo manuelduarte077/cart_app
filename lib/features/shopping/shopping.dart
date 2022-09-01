@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../constants.dart';
+import '../../utils/constants.dart';
 
 class Shopping extends StatelessWidget {
   const Shopping({Key? key}) : super(key: key);
