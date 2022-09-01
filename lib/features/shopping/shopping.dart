@@ -8,7 +8,7 @@ class Shopping extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = List<String>.generate(10000, (i) => 'Item $i');
+    final items = List<String>.generate(100, (i) => 'Item $i');
     return Scaffold(
       body: ListView.builder(
         itemCount: items.length,
