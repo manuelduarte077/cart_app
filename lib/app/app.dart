@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:splash_screen_view/SplashScreenView.dart';
 
 import '../cart_holder.dart';
 import '../login_state.dart';
 import '../router/routes.dart';
-import '../screen/auth/login.dart';
 
 class MyApp extends StatelessWidget {
   final LoginState loginState;
@@ -34,6 +32,7 @@ class MyApp extends StatelessWidget {
           final router = Provider.of<MyRouter>(context, listen: false).router;
           return MaterialApp.router(
             routeInformationParser: router.routeInformationParser,
+            routeInformationProvider: router.routeInformationProvider,
             routerDelegate: router.routerDelegate,
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
