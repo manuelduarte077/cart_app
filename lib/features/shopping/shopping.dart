@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
-import '../../utils/constants.dart';
+import 'widgets/list_product.dart';
 
 class Shopping extends StatelessWidget {
   const Shopping({Key? key}) : super(key: key);
@@ -10,18 +9,7 @@ class Shopping extends StatelessWidget {
   Widget build(BuildContext context) {
     final items = List<String>.generate(100, (i) => 'Item $i');
     return Scaffold(
-      body: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(items[index]),
-            onTap: () {
-              final value = items[index];
-              context.goNamed(detailsRouteName, params: {'item': value});
-            },
-          );
-        },
-      ),
+      body: ListProducts(items: items),
     );
   }
 }
