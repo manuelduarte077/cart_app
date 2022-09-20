@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-//ignore: must_be_immutable
 class ErrorPage extends StatelessWidget {
   final Exception? error;
-  late String message;
+  late final String message;
 
   ErrorPage({Key? key, this.error}) : super(key: key) {
     if (error != null) {

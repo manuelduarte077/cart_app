@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   final LoginState loginState;
   const MyApp({Key? key, required this.loginState}) : super(key: key);
 
-  // This widget is the root of your application.
+  /// This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(

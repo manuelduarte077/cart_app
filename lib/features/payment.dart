@@ -42,11 +42,12 @@ class _PaymentState extends State<Payment> {
                 children: [
                   Expanded(
                     child: TextField(
-                        decoration: const InputDecoration(
-                          border: UnderlineInputBorder(),
-                          hintText: 'Credit Card',
-                        ),
-                        controller: creditCardController),
+                      decoration: const InputDecoration(
+                        border: UnderlineInputBorder(),
+                        hintText: 'Credit Card',
+                      ),
+                      controller: creditCardController,
+                    ),
                   ),
                 ],
               ),
@@ -83,7 +84,9 @@ class _PaymentState extends State<Payment> {
                     child: TextField(
                       keyboardType: TextInputType.number,
                       decoration: const InputDecoration(
-                          border: UnderlineInputBorder(), hintText: 'CVC'),
+                        border: UnderlineInputBorder(),
+                        hintText: 'CVC',
+                      ),
                       controller: cvcController,
                     ),
                   ),

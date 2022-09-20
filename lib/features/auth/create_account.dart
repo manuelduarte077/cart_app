@@ -46,8 +46,9 @@ class _CreateAccountState extends State<CreateAccount> {
                       Expanded(
                         child: TextFormField(
                           decoration: const InputDecoration(
-                              border: UnderlineInputBorder(),
-                              hintText: 'Email'),
+                            border: UnderlineInputBorder(),
+                            hintText: 'Email',
+                          ),
                           controller: emailTextController,
                         ),
                       ),
