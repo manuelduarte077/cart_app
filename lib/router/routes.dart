@@ -20,12 +20,13 @@ class MyRouter {
   late final router = GoRouter(
     refreshListenable: loginState,
     debugLogDiagnostics: true,
-    urlPathStrategy: UrlPathStrategy.path,
+    // urlPathStrategy: UrlPathStrategy.path,
+
     routes: [
       GoRoute(
         name: rootRouteName,
         path: '/',
-        redirect: (state) =>
+        redirect: (context, state) =>
             state.namedLocation(homeRouteName, params: {'tab': 'shop'}),
       ),
       GoRoute(
@@ -100,23 +101,23 @@ class MyRouter {
       // forwarding routes to remove the need to put the 'tab' param in the code
       GoRoute(
         path: '/shop',
-        redirect: (state) =>
+        redirect: (context, state) =>
             state.namedLocation(homeRouteName, params: {'tab': 'shop'}),
       ),
       GoRoute(
         path: '/cart',
-        redirect: (state) =>
+        redirect: (context, state) =>
             state.namedLocation(homeRouteName, params: {'tab': 'cart'}),
       ),
       GoRoute(
         path: '/profile',
-        redirect: (state) =>
+        redirect: (context, state) =>
             state.namedLocation(homeRouteName, params: {'tab': 'profile'}),
       ),
       GoRoute(
         name: detailsRouteName,
         path: '/details-redirector/:item',
-        redirect: (state) => state.namedLocation(
+        redirect: (context, state) => state.namedLocation(
           subDetailsRouteName,
           params: {'tab': 'shop', 'item': state.params['item']!},
         ),
@@ -124,7 +125,7 @@ class MyRouter {
       GoRoute(
         name: personalRouteName,
         path: '/profile-personal',
-        redirect: (state) => state.namedLocation(
+        redirect: (context, state) => state.namedLocation(
           profilePersonalRouteName,
           params: {'tab': 'profile'},
         ),
@@ -132,7 +133,7 @@ class MyRouter {
       GoRoute(
         name: paymentRouteName,
         path: '/profile-payment',
-        redirect: (state) => state.namedLocation(
+        redirect: (context, state) => state.namedLocation(
           profilePaymentRouteName,
           params: {'tab': 'profile'},
         ),
@@ -140,7 +141,7 @@ class MyRouter {
       GoRoute(
         name: signinInfoRouteName,
         path: '/profile-signin-info',
-        redirect: (state) => state.namedLocation(
+        redirect: (context, state) => state.namedLocation(
           profileSigninInfoRouteName,
           params: {'tab': 'profile'},
         ),
@@ -148,7 +149,7 @@ class MyRouter {
       GoRoute(
         name: moreInfoRouteName,
         path: '/profile-more-info',
-        redirect: (state) => state.namedLocation(
+        redirect: (context, state) => state.namedLocation(
           profileMoreInfoRouteName,
           params: {'tab': 'profile'},
         ),
@@ -161,7 +162,7 @@ class MyRouter {
     ),
 
     // redirect to the profile page if the user is not logged in
-    redirect: (state) {
+    redirect: (context, state) {
       final loginLoc = state.namedLocation(loginRouteName);
       final loggingIn = state.subloc == loginLoc;
       final createAccountLoc = state.namedLocation(createAccountRouteName);
