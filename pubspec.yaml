@@ -18,7 +18,7 @@ dependencies:
   go_router: ^4.3.0
   icons_launcher: ^1.2.1
   provider: ^6.0.1
-  shared_preferences: ^2.0.8
+  shared_preferences: ^2.0.15
   splash_screen_view: ^3.0.0
 
 dev_dependencies:
